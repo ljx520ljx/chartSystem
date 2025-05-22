@@ -13,7 +13,7 @@ Chart系统是一个前后端分离的医疗数据可视化平台，专注于心
 - **数据库**：MySQL存储结构化数据，MinIO存储二进制文件，Redis用于缓存
 - **部署**：Docker + Kubernetes容器化部署
 
-![系统架构图](docs/images/architecture.png)
+![系统架构图](document/deployment/architecture.png)
 
 ## 主要功能
 
@@ -56,7 +56,7 @@ go run main.go
 ### 前端启动
 
 ```bash
-cd frontend
+cd web
 
 # 安装依赖
 npm install
@@ -88,14 +88,15 @@ chartsystem/
 │   ├── service/     # 业务逻辑层
 │   └── utils/       # 工具函数
 ├── pkg/             # 可复用包
-├── frontend/        # 前端React项目
+├── web/             # 前端React项目
 │   ├── public/      # 静态资源
 │   ├── src/         # 源代码
 │   └── package.json # 项目配置
-├── docs/            # 文档
-│   ├── api/         # API文档
-│   ├── design/      # 设计文档
-│   └── images/      # 图片资源
+├── document/        # 文档
+│   ├── api_design.md        # API设计文档
+│   ├── database_design.md   # 数据库设计文档
+│   ├── design.md            # 系统设计文档
+│   └── deployment/          # 部署相关文档和图片
 ├── main.go          # 程序入口
 ├── Dockerfile       # Docker构建文件
 └── docker-compose.yml # Docker编排配置
@@ -103,33 +104,7 @@ chartsystem/
 
 ## API文档
 
-API文档使用Swagger生成，可通过以下方式访问：
-
-- 开发环境：http://localhost:8080/swagger/index.html
-- 生产环境：https://api.example.com/swagger/index.html
-
-## 开发指南
-
-- [后端开发指南](docs/backend-development.md)
-- [前端开发指南](docs/frontend-development.md)
-- [API规范](docs/api-spec.md)
-- [贡献指南](CONTRIBUTING.md)
-
-## 测试
-
-### 后端测试
-
-```bash
-# 在项目根目录下运行
-go test ./...
-```
-
-### 前端测试
-
-```bash
-cd frontend
-npm test
-```
+API文档详情请参考[API设计文档](document/api_design.md)。
 
 ## 部署
 
@@ -150,7 +125,7 @@ npm test
    docker-compose up -d
    ```
 
-详细的部署指南请参考[部署文档](docs/deployment.md)。
+详细的部署指南请参考[部署文档](document/deployment/deployment.md)。
 
 ## 许可证
 
