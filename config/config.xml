@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ChartConfig>
+    <Channels>
+        <Channel id="1">
+            <Name>心电</Name>
+            <Color>#FF0000</Color>
+            <Scale>1.0</Scale>
+            <Visible>true</Visible>
+            <YAxisMin>-1.0</YAxisMin>
+            <YAxisMax>1.0</YAxisMax>
+        </Channel>
+        <Channel id="2">
+            <Name>血压</Name>
+            <Color>#00FF00</Color>
+            <Scale>1.0</Scale>
+            <Visible>true</Visible>
+            <YAxisMin>-1.0</YAxisMin>
+            <YAxisMax>1.0</YAxisMax>
+        </Channel>
+        <Channel id="3">
+            <Name>血氧</Name>
+            <Color>#0000FF</Color>
+            <Scale>1.0</Scale>
+            <Visible>true</Visible>
+            <YAxisMin>-1.0</YAxisMin>
+            <YAxisMax>1.0</YAxisMax>
+        </Channel>
+        <Channel id="4">
+            <Name>呼吸</Name>
+            <Color>#FFFF00</Color>
+            <Scale>1.0</Scale>
+            <Visible>true</Visible>
+            <YAxisMin>-1.0</YAxisMin>
+            <YAxisMax>1.0</YAxisMax>
+        </Channel>
+    </Channels>
+    <Display>
+        <GridVisible>true</GridVisible>
+        <RefreshRate>30</RefreshRate>
+        <TimeScale>1.0</TimeScale>
+    </Display>
+</ChartConfig>
