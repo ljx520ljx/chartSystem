@@ -104,7 +104,7 @@ chartsystem/
 
 ## API文档
 
-API文档详情请参考[API设计文档](document/api_design.md)。
+API文档详情请参考[API设计文档](document/api/api_design.md)。
 
 ## 部署
 
